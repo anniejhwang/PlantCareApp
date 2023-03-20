@@ -15,4 +15,12 @@ class PlantsControllerTest < ActionDispatch::IntegrationTest
       assert_response 200
     end
   end
+
+  test "show" do
+    get "/plants/#{Plant.first.id}.json"
+    assert_response 200
+
+    data = JSON.parse(response.body)
+    assert_equal ["id", "name", "description", "amount_of_sun", "days_to_water", "created_at", "updated_at", "image_url"], data.keys
+  end
 end

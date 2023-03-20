@@ -8,4 +8,5 @@ Rails.application.routes.draw do
 
   get "/plants" => "plants#index"
   post "/plants" => "plants#create"
+  get "/plants/:id" => "plants#show"
 end
