@@ -25,4 +25,10 @@ class PlantsController < ApplicationController
     )
     render :show
   end
+
+  def destroy
+    @plant = Plant.find_by(id: params[:id])
+    @plant.destroy
+    render json: { message: "Plant deleted successfully" }
+  end
 end

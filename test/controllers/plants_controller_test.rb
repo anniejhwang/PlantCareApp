@@ -36,4 +36,11 @@ class PlantsControllerTest < ActionDispatch::IntegrationTest
     assert_equal plant.days_to_water, data["days_to_water"]
     assert_equal plant.image_url, data["image_url"]
   end
+
+  test "destroy" do
+    assert_difference "Plant.count", -1 do
+      delete "/plants/#{Plant.first.id}.json"
+      assert_response 200
+    end
+  end
 end
