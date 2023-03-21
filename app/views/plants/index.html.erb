@@ -1,0 +1,8 @@
+<h1>All Plants</h1>
+<% @plants.each do |plant| %>
+  <h2><%= plant.name %></h2>
+  <p>Description: <%= plant.description %></p>
+  <p>Amount of Sun: <%= plant.amount_of_sun %></p>
+  <p>Days to Water: <%= plant.days_to_water %></p>
+   <p>Image: <%= plant.image_url %></p>
+<% end %>

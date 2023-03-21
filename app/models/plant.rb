@@ -1,4 +1,4 @@
 class Plant < ApplicationRecord
-  has_many :schedules
+  belongs_to :schedule
   has_many :users, through: :schedules
 end
