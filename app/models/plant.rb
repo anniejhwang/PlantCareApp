@@ -1,3 +1,3 @@
 class Plant < ApplicationRecord
-  belongs_to :schedule
+  has_many :schedules
 end
