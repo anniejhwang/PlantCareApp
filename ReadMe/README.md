@@ -1,6 +1,6 @@
 # Plant Care App
 
-![screenshot](screenshot.png)
+![Photo of App](/ReadMe/screenshot.png?raw=true)
 
 This Plant Care App is an application designed to help plant enthusiasts manage their plant collection by learning about new plants, and keeping track of their plant watering schedules. With this app, users can easily organize their plants schedules and access a database of plant information.
 
