@@ -27,7 +27,6 @@ This Plant Care App is created with:
 
 - Ruby on Rails: A server-side web application framework written in Ruby under the MIT License.
 - React.js: An open-source Javascript Framework and library for building web applications.
-- Plant API: A third-party API for accessing plant care information. The API site I used was [Perenual](https://perenual.com/docs/api).
 - Bootstrap: A free and open-source CSS framework directed at responsive, mobile-first front-end web development.
 - Plant API: A third-party API for accessing plant care information. The API site I used was [Perenual](https://perenual.com/docs/api).
   - Environment Variable for API key security.
