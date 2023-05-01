@@ -1,18 +1,18 @@
 databases:
-  - name: Plant_Care_App
-    databaseName: Plant_Care_App
+  - name: plant_care_app
+    databaseName: plant_care_app
     user: mysite
 
 services:
   - type: web
     name: PlantApp
-    env: dev
+    env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: Plant_Care_App
+          name: plant_care_app
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
